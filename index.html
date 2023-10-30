@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development Wiki</title>
+<style>
+
+  /* Navigation Bar Styles */
+  nav {
+    overflow: hidden;
+    background-color: #333; /* Change navbar color based on your preference */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  nav a:hover {
+    background-color: #ddd; /* Change hover color based on your preference */
+    color: black;
+  }
+
+  nav a.active {
+    background-color: #4CAF50; /* Change active color based on your preference */
+    color: white;
+  }
+
+  /* Ensure the navbar is responsive */
+  @media screen and (max-width: 600px) {
+    nav a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  /* Customized Styles for Content */
+  .content-container {
+    padding-top: 50px; /* Give space for the fixed navbar */
+  }
+
+  .section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  /* Multimedia Element Styles */
+  .responsive-video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Additional Customized Styles */
+  .wiki-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  .wiki-summary-table th, .wiki-summary-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .wiki-summary-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* Styling for background video */
+  .background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Keep the video in the background */
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <a class="active" href="#home">Home</a>
+  <a href="#introduction">Introduction</a>
+  <a href="#components">Components</a>
+</nav>
+
+<div class="content-container">g
+  <div class="section">
+    <h1>Web Development</h1>
+    <p>Web development refers to the tasks associated with developing websites for hosting via intranet or internet. This process includes web design, web content development, client-side/server-side scripting, and network security configuration. Web development can range from creating a simple single static page of plain text to complex web-based applications, social network services, or electronic businesses.</p>
+  </div>
+
+  <div class="section">
+    <h2>Introduction to Web Development</h2>
+    <p>Web development is a vast field that is categorized into various types depending on the functionalities and complexities. It's an integral part of the modern-day digital world and has transformed the way businesses operate and individuals interact.</p>
+  </div>
+
+  <!-- Summarizing Table Example (Customized Style) -->
+  <div class="section">
+    <h2>Key Components of Web Development</h2>
+    <table class="wiki-summary-table">
+      <tr>
+        <th>Component</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Frontend Development</td>
+        <td>This pertains to the client side of web development. Frontend developers work on the visual aesthetics and interactivity of a website using languages like HTML, CSS, and JavaScript. Their main goal is to ensure a smooth user experience.</td>
+    </tr>
+      <tr>
+        <td>Frontend Development</td>
+        <td>Backend or server-side development is all about how the site works. This includes databases, servers, and applications. Backend developers work with server-side scripting languages such as PHP, Ruby, Python, and Node.js to create logic for web applications.</td>
+    </tr>
+      <tr>
+        <td>Full-Stack Development</td>
+        <td>A full-stack developer has the ability to work on both the front-end and back-end components of a website. They are proficient in handling projects that involve databases, building user-facing websites, or even work with clients during the planning phase of projects.</td>
+    </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Rain</h2>
+    <br></br>
+    <video autoplay muted loop id="myVideo" class="responsive-video">
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+</div>
+
+</body>
+</html>
+
